@@ -1,3 +1,5 @@
-export async  function GET() {
-    return new Response('Hello world!')
+import { comments } from "../comments/data";
+
+export async function GET() {
+  return Response.json(comments);
 }
